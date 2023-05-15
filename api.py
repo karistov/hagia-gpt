@@ -68,7 +68,7 @@ def text_to_chunks(texts, word_length=150, start_page=1):
 
 class SemanticSearch:
     def __init__(self):
-        self.use = hub.load('https://tfhub.dev/google/universal-sentence-encoder/4')
+        self.use = hub.load('./universal-sentence-encoder_4')
         self.fitted = False
 
     def fit(self, data, batch=1000, n_neighbors=5):
